@@ -9,10 +9,15 @@ void edad(int age){
         cout<<"your are able to vote"<<endl;
     else
      cout<<"I hope you are  enjoying retirement";
-    }
-
+    
+}
+void genero(string gender){
+    if(gender=="M")
+        cout<<"him";
+    else
+        cout<<"her";
+		}
 int main(){
-    char tu_nombre[200];
     string nombre;
     string amigo;
     string gender;
@@ -32,8 +37,11 @@ int main(){
     cout<<"What do you do?"<<endl;
     cin>>work;
     cout<<"Are you married?"<<endl;cin>>civil;
-    cout<<"If you see  "<<amigo<<", please ask "<<"him/her "<<"to call me"<<endl;
-    cin>>gender;cout<<"If you see "<<" "<<amigo<<", please ask "<<gender<<" to call me"<<endl;
+    cout<<"If you see  "<<amigo<<", please ask "<<"'F' or 'M'"<<"to call me"<<endl;
+    cin>>gender;  
+	while((gender!="M") && (gender!="F"))
+                    {cin>>gender;}
+	cout<<"If you see "<<" "<<amigo<<", please ask "; genero(gender);cout<<" to call me"<<endl;
     cout<<"his age is?"<<" ";cin>>age; while((age<0)||(age>90))
                                                     {cin>>age;}
     edad(age);
@@ -44,7 +52,7 @@ int main(){
     cout<<"Have you seen"<<" "<<amigo<<" "<<"lately?"<<endl;
     cout<<"What do you do?"<<endl; cout<<work<<endl;
     cout<<"Are you married?"<<endl;cout<<civil<<endl;
-    cout<<"If you see"<<" "<<amigo<<", please ask "<<gender<<" to call me"<<endl;
+   	cout<<"If you see "<<" "<<amigo<<", please ask "; genero(gender);cout<<" to call me"<<endl;
     edad(age);
     cout<<"You friend "<<endl;cout<<autor<<endl;
     system("PAUSE");
