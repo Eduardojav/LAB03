@@ -1,0 +1,53 @@
+#include<iostream>
+#include<string.h>
+#include<windows.h>
+using namespace std;
+void edad(int age){
+    if(age<=17)
+        cout<<"Next year you'll be"<<age+1<<endl;
+    else if(age>=18)
+        cout<<"your are able to vote"<<endl;
+    else
+     cout<<"I hope you are  enjoying retirement";
+    }
+
+int main(){
+    char tu_nombre[200];
+    string nombre;
+    string amigo;
+    string gender;
+    string estado;
+    string other_amigo;
+    string work;
+    string civil;
+    string resp;
+    string autor;
+    int age;
+    cout<<"Dear"<<" ";cin>>nombre;cout<<"How are you?"<<endl;
+    cin>>estado;
+    cout<<"have you seen"<<" 'enter name the other friend' lately"<<endl;
+    cin>>amigo;
+    cout<<"have you seen  "<<amigo<<" "<<"lately?"<<endl;
+    cin>>resp;
+    cout<<"What do you do?"<<endl;
+    cin>>work;
+    cout<<"Are you married?"<<endl;cin>>civil;
+    cout<<"If you see  "<<amigo<<", please ask "<<"him/her "<<"to call me"<<endl;
+    cin>>gender;cout<<"If you see "<<" "<<amigo<<", please ask "<<gender<<" to call me"<<endl;
+    cout<<"his age is?"<<" ";cin>>age; while((age<0)||(age>90))
+                                                    {cin>>age;}
+    edad(age);
+    cout<<"You friend"<<" ";cin>>autor;
+    system("cls");
+    cout<<"Dear, "<<nombre<<endl;
+    cout<<"How are you?"<<endl ;cout<<estado<<endl;
+    cout<<"Have you seen"<<" "<<amigo<<" "<<"lately?"<<endl;
+    cout<<"What do you do?"<<endl; cout<<work<<endl;
+    cout<<"Are you married?"<<endl;cout<<civil<<endl;
+    cout<<"If you see"<<" "<<amigo<<", please ask "<<gender<<" to call me"<<endl;
+    edad(age);
+    cout<<"You friend "<<endl;cout<<autor<<endl;
+    system("PAUSE");
+
+    return 0;
+    }
