@@ -9,7 +9,7 @@ void edad(int age){
         cout<<"your are able to vote"<<endl;
     else
      cout<<"I hope you are  enjoying retirement";
-    
+ 
 }
 void genero(string gender){
     if(gender=="M")
@@ -23,38 +23,30 @@ int main(){
     string gender;
     string estado;
     string other_amigo;
-    string work;
-    string civil;
-    string resp;
     string autor;
     int age;
-    cout<<"Dear"<<" ";cin>>nombre;cout<<"How are you?"<<endl;
-    cin>>estado;
-    cout<<"have you seen"<<" 'enter name the other friend' lately"<<endl;
+    cout<<"Dear"<<" ";cin>>nombre;cout<<"I tell you that I've done well since our farewell"<<endl;
+    cout<<"Have you seen"<<" (enter name the other friend).. lately"<<endl;
     cin>>amigo;
     cout<<"have you seen  "<<amigo<<" "<<"lately?"<<endl;
-    cin>>resp;
-    cout<<"What do you do?"<<endl;
-    cin>>work;
-    cout<<"Are you married?"<<endl;cin>>civil;
-    cout<<"If you see  "<<amigo<<", please ask "<<"'F' or 'M'"<<"to call me"<<endl;
-    cin>>gender;  
+    cout<<"I'm in the Bahamas and what do you tell me? ";
+    cout<<"and just got married last week I'm very happy"<<endl;
+    cout<< "(enter the recipient's gender)F or M....";cin>>gender;  
 	while((gender!="M") && (gender!="F"))
                     {cin>>gender;}
 	cout<<"If you see "<<" "<<amigo<<", please ask "; genero(gender);cout<<" to call me"<<endl;
-    cout<<"his age is?"<<" ";cin>>age; while((age<0)||(age>90))
+	cout<<"what is the age of the recipient?"<<endl; cin>>age; while((age<0)||(age>90))
                                                     {cin>>age;}
     edad(age);
     cout<<"You friend"<<" ";cin>>autor;
     system("cls");
     cout<<"Dear, "<<nombre<<endl;
-    cout<<"How are you?"<<endl ;cout<<estado<<endl;
-    cout<<"Have you seen"<<" "<<amigo<<" "<<"lately?"<<endl;
-    cout<<"What do you do?"<<endl; cout<<work<<endl;
-    cout<<"Are you married?"<<endl;cout<<civil<<endl;
+    cout<<"I tell you that I've done well since our farewell"<<endl;
+    cout<<"I'm in the Bahamas and what do you tell me? ";
+    cout<<"and  just got married last week I'm very happy"<<endl;
    	cout<<"If you see "<<" "<<amigo<<", please ask "; genero(gender);cout<<" to call me"<<endl;
     edad(age);
-    cout<<"You friend "<<endl;cout<<autor<<endl;
+    cout<<"You friend ";cout<<autor<<endl;
     system("PAUSE");
 
     return 0;
